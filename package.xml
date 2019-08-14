@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Premius_Simpleshipping</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Add up to 10 simple fixed price shipping methods.</summary>
+    <description>Premius Simpleshipping extension allows you to add up to 10 fixed price shipping methods to your Magento shopping cart.  Easy to use and self-explanatory.</description>
+    <notes>First stable release</notes>
+    <authors><author><name>Artem Moroz</name><user>mavstuff</user><email>artem.moroz@gmail.com</email></author></authors>
+    <date>2013-06-28</date>
+    <time>22:20:45</time>
+    <contents><target name="magecommunity"><dir name="Premius"><dir name="Simpleshipping"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Fieldset"><file name="Banner.php" hash="aa5bf162c6a79d2d584af35ff43b55ec"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="960cafcbc18f3dc98ec19e299bb88576"/></dir><dir name="Model"><dir name="Shipping"><dir name="Carrier"><file name="Simplecarrier.php" hash="0c5a088a26ee10ee6ff5ab9790b18114"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="02058c4370f1cf5da91aaf2ecb234c10"/><file name="system.xml" hash="9ffb977230aa029f95ab0c009a0146ba"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Premius_Simpleshipping.xml" hash=""/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><dir name="premius"><file name="logo.png" hash="c960b09caed6af158c99e03400a97477"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

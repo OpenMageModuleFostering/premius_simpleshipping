@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Premius_Simpleshipping>
+            <version>1.2.0</version>
+        </Premius_Simpleshipping>
+    </modules>
+    
+    <global>
+        <resources>
+            <simpleshipping_setup>
+                <setup>
+                    <module>Premius_Simpleshipping</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </simpleshipping_setup>
+            <simpleshipping_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </simpleshipping_read>
+            <simpleshipping_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </simpleshipping_write>
+        </resources>
+        
+        <models>
+            <simpleshipping>
+                <class>Premius_Simpleshipping_Model</class>
+            </simpleshipping>
+        </models>
+        
+        <blocks>
+            <simpleshipping>
+                <class>Premius_Simpleshipping_Block</class>
+            </simpleshipping>
+        </blocks>
+        
+        <sales>
+            <shipping>
+                <carriers>
+                    <simplecarrier>
+                        <class>Premius_Simpleshipping_Model_Shipping_Carrier_Simplecarrier</class>
+                    </simplecarrier>
+                </carriers>
+            </shipping>
+        </sales>
+        
+        <helpers>
+            <simpleshipping>
+                <class>Premius_Simpleshipping_Helper</class>
+            </simpleshipping>
+        </helpers>
+        
+    </global>
+
+    <default>
+        <carriers>
+            <simplecarrier>
+                <active>0</active>
+                <sallowspecific>0</sallowspecific>
+                <model>simpleshipping/shipping_carrier_simplecarrier</model>
+                <name>Fixed</name>
+                <price>5.00</price>
+                <title>Flat Rate</title>
+                <type>I</type>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </simplecarrier>
+        </carriers>
+    </default>
+</config>
