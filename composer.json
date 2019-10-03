@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Premius_Simpleshipping",
+    "name": "OpenMageModuleFostering\/Premius_Simpleshipping",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Add up to 10 simple fixed price shipping methods.",
     "authors": [
-    {
-        "name": "Artem Moroz",
-        "email": "artem.moroz@gmail.com"
-    }
-],
+        {
+            "name": "Artem Moroz",
+            "email": "artem.moroz@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
